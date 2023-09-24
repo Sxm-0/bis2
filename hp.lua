@@ -18,6 +18,6 @@ spawn(function()
   		}
   
   		game:GetService("ReplicatedStorage").Events.Energy:FireServer(unpack(args))
-    end
-		end
+end
+end
 end)
