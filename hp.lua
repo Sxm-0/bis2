@@ -3,7 +3,7 @@ spawn(function()
 		if game:GetService("Players").GoldenGuyWasTaken.PlayerGui.EnergyBar.EnergyBar.EnergyBar:FindFirstChild("Template") then
 			game:GetService("Players").GoldenGuyWasTaken.PlayerGui.EnergyBar.EnergyBar.EnergyBar:FindFirstChild("Template"):Destroy()
 		else
-				return ""
+			return ""
 		end
   
 		if game:GetService("Players").GoldenGuyWasTaken.PlayerGui.EnergyBar.EnergyBar.EnergyBar.ImageLabel.Frame.Size ~= UDim2.new(1, 0, 1, 0) then
@@ -18,6 +18,6 @@ spawn(function()
   		}
   
   		game:GetService("ReplicatedStorage").Events.Energy:FireServer(unpack(args))
-end
+    end
 end
 end)
